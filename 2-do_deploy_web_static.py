@@ -9,7 +9,7 @@ from os.path import exists
 from fabric.api import put, run, env
 
 
-env.hosts = ['100.25.183.90', '54.209.80.28']
+env.hosts = ['100.25.183.90', '54.144.83.63']
 
 
 def do_deploy(archive_path):
