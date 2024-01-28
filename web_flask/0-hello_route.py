@@ -2,7 +2,7 @@
 """program that launches a Flask online application"""
 
 # import the Flask class from the Flask module;
-import the Flask
+from flask import Flask
 
 app.url_map.strict_slashes = False
 
