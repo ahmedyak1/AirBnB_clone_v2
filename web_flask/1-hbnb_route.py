@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-"""program that launches a Flask online application"""
+"""Program that launches a Flask online application"""
+
+
+from flask import Flask
 
 app = Flask(__name__)
 app.url_map.strict_slashes = False
@@ -10,16 +13,17 @@ def index():
     """display "Hello HBNB!"
 
     Returns:
-        str: text on the index page
+        str: str pageee
     """
     return 'Hello HBNB!'
+
 
 @app.route('/hbnb')
 def hbnb_route():
     """display "HBNB"
 
-    Returns:
-        str: text on the page
+    Return 
+        str str page 
     """
     return 'HBNB'
 
