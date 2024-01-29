@@ -6,13 +6,14 @@ from flask import Flask, render_template
 
 from models import storage
 
+# create an instance called app of the class by passong the __name__ variable
 app = Flask(__name__)
 app.url_map.strict_slashes = False
 
 
 @app.teardown_appcontext
 def teardown_db(exception=None):
-    """removes the current SQLAlchemy Session
+    """Removes current SQLAlchemy Session
     """
     if storage is not None:
         storage.close()
